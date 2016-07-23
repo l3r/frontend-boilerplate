@@ -11,12 +11,31 @@
 // Styles
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #fff;
 }
 
 h1 {
   font-family: Lato, sans-serif;
+  color: $accent-color;
 }
 
-aside {
+nav {
+  padding: 20px;
+  border-bottom: 1px solid $divider-color;
+  background-color: $primary-color;
+  @include flexbox;
+  @include flex-just(space-between);
+}
 
+a {
+  color: $primary-color-light;
+}
+
+button {
+  padding: 8px;
+  background-color: #fff;
+  color: $primary-color;
+  border: 1px solid $divider-color;
+  border-radius: 5px;
 }
